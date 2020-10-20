@@ -1,18 +1,18 @@
 class OrdersController < ApplicationController
-  before_action :set_order, only: [:show, :edit, :update, :destroy]
+
 
   # GET /orders
   # GET /orders.json
   def index
-    @orders = Order.all
+     run Order::Index
     
-    render_cell cell: Order::Cell::Index
+     render_cell cell: Order::Cell::Index, model: @model
   end
 
   # GET /orders/1
   # GET /orders/1.json
   def show
-    render_cell cell: Order::Cell::Show
+    render_cell cell: Order::Cell::Show, model: @model
   end
 
 #   # GET /orders/new
