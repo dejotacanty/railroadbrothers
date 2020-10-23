@@ -1,18 +1,29 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
 <html>
   <head>
+  <%= stylesheet_link_tag 'application' %>
     <title>
       RYAN & RYAN Co.
     </title>
 
   </head>
-  <body style="background-color:#DDDDDD;">
+  <body>
     <div>
-      <nav style="background-color:#CCCCCC;">
-        
+      <nav>
+
+        <div id="nav-header">
+          <h1>Header Title</h1>
+        </div>
+        <div id="nav-links">
+          <div class="nav-link"><p>Link</p></div>
+          <div class="nav-link"><p>Link</p></div>
+          <div class="nav-link"><p>Link</p></div>
+          <div class="nav-link"><p>Link</p></div>
+          <div class="nav-link"><p>Link</p></div>
+        </div>
       </nav>
     </div>
-    <div>
+    <div id="content">
       <%= yield %>
     </div>
   </body>
