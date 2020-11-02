@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   #   resources :categories
   #   resources :customers
   # # end
+  
   resources :products, only: [:index, :show]
   resources :orders, only: [:index, :show]
   resources :units, only: [:index, :show]
@@ -18,7 +19,6 @@ Rails.application.routes.draw do
   resources :strengths, only: [:index, :show]
   resources :purchases, only: [:index, :show]
 
-  
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
 
