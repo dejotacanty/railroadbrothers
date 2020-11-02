@@ -1,4 +1,7 @@
 class Product < ApplicationRecord
-  has_many :categories
-  has_many :units, through: :categories
+
+  belongs_to :categories
+  belongs_to :strengths
+  has_many :orders
+  
 end
