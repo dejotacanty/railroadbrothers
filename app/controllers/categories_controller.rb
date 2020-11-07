@@ -14,6 +14,10 @@ class CategoriesController < ApplicationController
     render_cell cell: Category::Cell::Show
   end
 
+  def products
+
+  end
+
 #   # GET /categories/new
 #   def new
 #     @category = Category.new
