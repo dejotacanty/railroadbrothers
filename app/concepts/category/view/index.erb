@@ -1,1 +1,10 @@
-bitch
+<h1>Categories</h1>
+    
+    <% categories.each do |category| %>
+
+        <p><%= link_to "Category name: #{category.name}", category_path(category) %></p>
+
+    <% end %>
+    
+
+<br>
