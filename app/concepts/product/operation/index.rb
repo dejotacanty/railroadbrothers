@@ -1,4 +1,4 @@
-class Order::Index < Trailblazer::Operation
+class Product::Index < Trailblazer::Operation
 
 
 end

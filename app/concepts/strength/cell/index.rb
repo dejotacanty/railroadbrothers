@@ -1,4 +1,4 @@
-module Order::Cell
+module Strength::Cell
   class Index < Trailblazer::Cell
 
   end

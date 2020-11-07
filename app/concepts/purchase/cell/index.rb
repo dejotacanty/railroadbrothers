@@ -1,4 +1,4 @@
-module Order::Cell
+module Purchase::Cell
   class Index < Trailblazer::Cell
 
   end

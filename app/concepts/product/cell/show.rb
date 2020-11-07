@@ -1,4 +1,4 @@
-module Order::Cell
+module Product::Cell
   class Show < Trailblazer::Cell
   end
 end
